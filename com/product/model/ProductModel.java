@@ -2,10 +2,10 @@ package model;
 import java.util.ArrayList;
 
 public class ProductModel {
-    private String name;
-    private String description;
-    private int price;
-    static ArrayList<ProductModel> products = new ArrayList<ProductModel>();
+    public String name;
+    public String description;
+    public int price;
+    public static ArrayList<ProductModel> products = new ArrayList<ProductModel>();
 
     public ProductModel (String name, String description, int price){
         this.name = name;
