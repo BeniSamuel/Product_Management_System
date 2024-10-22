@@ -12,7 +12,7 @@ public class ProductController {
     // handler for view product
     public void viewProduct (){
         for (ProductModel product : ProductModel.products){
-            System.out.println(product);
+            System.out.println("Name: " + product.name+" "+ "Description: " + product.description+ " " + "price: " + product.price);
         }
     }
     // Update a product
