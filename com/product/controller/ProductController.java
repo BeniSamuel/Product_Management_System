@@ -7,7 +7,7 @@ public class ProductController {
     public void addProduct (String name, String description, int price){
         ProductModel newProduct = new ProductModel(name, description, price);
 
-        System.out.println("Created Product Successfully!" + newProduct);
+        System.out.println("Created Product Successfully!");
     }
     // handler for view product
     public void viewProduct (){
@@ -25,5 +25,5 @@ public class ProductController {
             }
         }
     }
-    
+
 }
