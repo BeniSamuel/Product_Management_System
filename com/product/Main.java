@@ -37,13 +37,29 @@ public class Main {
                     pController.addProduct(name, description, price);
                     break;
                 case 2:
-                    System.out.println("QUITTING");
+                    pController.viewProduct();
                     break;
+                case 3:
+                    System.out.println("Enter oldName: ");
+                    String oldName = sc.next(); 
+
+                    System.out.println("Enter new name: ");
+                    String newName = sc.next();
+
+                    System.out.println("Enter new description: ");
+                    String newDescription = sc.next();
+
+                    System.out.println("Enter new Price: ");
+                    int newPrice = sc.nextInt();
+
+                    pController.updateProduct(oldName, newName, newDescription, newPrice);
+
                 default:
+                    System.out.println("Invalid choice try again");
                     break;
             }
 
-            if (choice == 2){
+            if (choice == 5){
                 break;
             }
         }
